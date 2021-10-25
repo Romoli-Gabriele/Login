@@ -13,13 +13,14 @@
 </head>
 
 <body>
-    <div class="card bg-primary  bg-gradient" style="width: 40rem; color:white;">
+    <br>
+    <div class="card bg-primary  bg-gradient mx-auto" style="width: 40rem; color:white;">
         <div class="card-header">
             Modulo di iscrizione
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item bg-primary" style="color:white;">
-                <form>
+                <form method="POST" action="">
                     <div class="row mb-3">
                         <label for="inputSurname" class="col-sm-2 col-form-label">Cognome:</label>
                         <div class="col-sm-10">
@@ -90,6 +91,7 @@
             </li>
             <li class="card-header">
                 <button type="reset" class="btn btn-secondary">Annulla</button>
+                
                 <button type="submit" class="btn btn-danger">Conferma</button>
             </li>
         </ul>
