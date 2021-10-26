@@ -14,34 +14,36 @@
 
 <body>
     <br>
-    <div class="card bg-primary  bg-gradient mx-auto" style="width: 40rem; color:white;">
+    <div class="card bg-primary  bg-gradient mx-auto" style="width: 25rem; color:white;">
         <div class="card-header">
             Modulo di iscrizione
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-primary" style="color:white;">
-                <form method="POST" action="">
+            <form method="POST" action="riepilogo.php">
+                <li class="list-group-item bg-primary" style="color:white;">
+
                     <div class="row mb-3">
-                        <label for="inputSurname" class="col-sm-2 col-form-label">Cognome:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputSurname">
+                        <label for="inputSurname" class="col-sm-4 col-form-label">Cognome:</label>
+                        <div class="col-sm-7">
+                            <input type="text" style="width: 12rem; margin: 0" class="form-control" name="surname">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="inputName" class="col-sm-2 col-form-label">Nome:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputName">
+                        <label for="inputName" class="col-sm-4 col-form-label">Nome:</label>
+                        <div class="col-sm-7">
+                            <input type="text" style="width: 12rem; margin: 0" class="form-control" name="name">
                         </div>
                     </div>
                     <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Sesso:</legend>
-                        <div class="col-sm-10">
+                        <legend class="col-form-label col-sm-4 pt-0">Sesso:</legend>
+                        <div class="col-sm-7">
                             <div class="form-check">
-                                <input class="" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <input class="" type="radio" name="genere" id="gridRadios1" value="Maschile"
+                                    checked>
                                 <label class="form-check-label" for="gridRadios1">
                                     Maschile
                                 </label>
-                                <input class="" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <input class="" type="radio" name="genere" id="gridRadios2" value="Femminile">
                                 <label class="form-check-label" for="gridRadios2">
                                     Femminile
                                 </label>
@@ -49,51 +51,52 @@
                         </div>
                     </fieldset>
                     <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Nazionalità</legend>
-                        <div class="col-sm-10">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Italiana</option>
-                                <option value="1">Americana</option>
-                                <option value="2">Spagnola</option>
-                                <option value="3">Francese</option>
+                        <legend class="col-form-label col-sm-4 pt-0">Nazionalità</legend>
+                        <div class="col-sm-7">
+                            <select class="form-select"  style="width: 12rem; margin: 0" aria-label="Default select example" name="nazionalita">
+                                <option selected value="Italiana">Italiana</option>
+                                <option value="Americana">Americana</option>
+                                <option value="Spagnola">Spagnola</option>
+                                <option value="Francese">Francese</option>
                             </select>
                         </div>
                     </fieldset>
                     <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Patente:</legend>
-                        <div class="col-sm-9 offset-sm-1">
-                            <input class="" type="checkbox" id="gridCheck1">
+                        <legend class="col-form-label col-sm-4 pt-0">Patente:</legend>
+                        <div class="col-sm-7 offset-sm-1">
+                            <input class="" type="checkbox" id="gridCheck1" name="patente" value="categ. A">
                             <label class="form-check-label" for="gridCheck1">
                                 cat. A
                             </label>
-                            <input class="" type="checkbox" id="gridCheck2">
-                            <label class="form-check-label" for="gridCheck2">
+                            <input class="" type="checkbox" id="gridCheck2" name="patente" value="categ. B">
+                            <label class="form-check-label" for="gridCheck2" >
                                 cat. B
                             </label>
                         </div>
                     </fieldset>
                     <div class="row mb-3">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">e-Mail:</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputMail">
+                        <label for="inputEmail" class="col-sm-4 col-form-label">e-Mail:</label>
+                        <div class="col-sm-7">
+                            <input type="email"  style="width: 12rem; margin: 0" class="form-control" id="inputMail" name="mail">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="inputName" class="col-sm-2 col-form-label">Password:</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                        <label for="inputName" class="col-sm-4 col-form-label">Password:</label>
+                        <div class="col-sm-7">
+                            <input type="password"  style="width: 12rem; margin: 0" class="form-control" id="inputPassword" name="password">
                         </div>
                     </div>
-                </form>
 
 
 
-            </li>
-            <li class="card-header">
-                <button type="reset" class="btn btn-secondary">Annulla</button>
-                
-                <button type="submit" class="btn btn-danger">Conferma</button>
-            </li>
+
+                </li>
+                <li class="card-header">
+                    <button type="reset" class="btn btn-secondary">Annulla</button>
+
+                    <button type="submit" class="btn btn-danger">Conferma</button>
+                </li>
+            </form>
         </ul>
     </div>
 
