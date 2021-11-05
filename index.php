@@ -14,8 +14,9 @@
     <?php 
     session_start();
     echo '
+    <h1>Log-in</h1>
     <form action="benvenuto.php">
-        
+        <input type="email" placeholder="">
     </form>
     ';
     
