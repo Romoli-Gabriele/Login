@@ -62,12 +62,13 @@
         </li>
         <li class='card-header'>
             <a  href='index.php'><button class='btn btn-secondary' >Correggi</button></a>
-            <button class='btn btn-success' onclick='Registra' >Registra</button>
+            <a href='esito.php'<button class='btn btn-success' onclick='Registra' >Registra</button>
         </li>
     </ul>
         </div>
         ";
     session_start();
+    $_SESSION["account"] = [$_POST["surname"], $_POST["name"], $_POST["genere"], $_POST["nazionalita"], $_POST["patente"], $_POST["mail"], $_POST["password"]];
     $_SESSION["surname"] = $_POST["surname"];
     $_SESSION["name"] = $_POST["name"];
     $_SESSION["genere"] = $_POST["genere"];
@@ -76,7 +77,6 @@
     $_SESSION["mail"] = $_POST["mail"];
     $_SESSION["password"] = $_POST["password"];
 
-    echo $_SESSION["surname"];
     ?>
 </body>
 
