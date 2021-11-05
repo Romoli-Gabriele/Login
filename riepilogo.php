@@ -68,7 +68,6 @@
         </div>
         ";
     session_start();
-    $_SESSION["account"] = [$_POST["surname"], $_POST["name"], $_POST["genere"], $_POST["nazionalita"], $_POST["patente"], $_POST["mail"], $_POST["password"]];
     $_SESSION["surname"] = $_POST["surname"];
     $_SESSION["name"] = $_POST["name"];
     $_SESSION["genere"] = $_POST["genere"];
@@ -76,7 +75,8 @@
     $_SESSION["patente"] = $_POST["patente"];
     $_SESSION["mail"] = $_POST["mail"];
     $_SESSION["password"] = $_POST["password"];
-
+    $_SESSION["account"] = [$_POST["surname"], $_POST["name"], $_POST["genere"], $_POST["nazionalita"], $_POST["patente"], $_POST["mail"], $_POST["password"]];
+    array_push($_SESSION["lista account"], $_SESSION["account"]);
     ?>
 </body>
 
