@@ -331,7 +331,7 @@
 
 
                 </li>
-                <li class="card-header">
+                <li class="card-footer">
                     <button type="reset" class="btn btn-secondary">Annulla</button>
 
                     <button type="submit" class="btn btn-danger">Conferma</button>

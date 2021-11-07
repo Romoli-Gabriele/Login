@@ -60,7 +60,7 @@
                     </div>
                 </div>
         </li>
-        <li class='card-header'>
+        <li class='card-footer'>
             <a  href='index.php'><button class='btn btn-secondary' >Correggi</button></a>
             <a href='esito.php'<button class='btn btn-success' onclick='Registra' >Registra</button>
         </li>
@@ -68,6 +68,9 @@
         </div>
         ";
     session_start();
+    /*if(!isset($_SESSION["lista account"])){
+        $_SESSION["lista account"]= [];
+    }*/
     $_SESSION["surname"] = $_POST["surname"];
     $_SESSION["name"] = $_POST["name"];
     $_SESSION["genere"] = $_POST["genere"];
@@ -75,8 +78,8 @@
     $_SESSION["patente"] = $_POST["patente"];
     $_SESSION["mail"] = $_POST["mail"];
     $_SESSION["password"] = $_POST["password"];
-    $_SESSION["account"] = [$_POST["surname"], $_POST["name"], $_POST["genere"], $_POST["nazionalita"], $_POST["patente"], $_POST["mail"], $_POST["password"]];
-    array_push($_SESSION["lista account"], $_SESSION["account"]);
+    //$_SESSION["account"] = [$_POST["surname"], $_POST["name"], $_POST["genere"], $_POST["nazionalita"], $_POST["patente"], $_POST["mail"], $_POST["password"]];
+    //array_push($_SESSION["lista account"], $_SESSION["account"]);
     ?>
 </body>
 

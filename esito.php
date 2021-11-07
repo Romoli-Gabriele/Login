@@ -17,15 +17,15 @@
         session_start();
         
         echo"
-        <div class='card .bg-warning' style='width: 18rem;'>
-        <div class='card-header'>
+        <div class='card ' style='width: 18rem;'>
+        <div class='card-header .bg-warning'>
             Esito registrazione
         </div>
-        <ul class='list-group list-group-flush'>
+        <ul class='list-group list-group-flush .bg-warning'>
           <li class='list-group-item'>Dati correttamente registrati</li>
         </ul>
-        <div class=0'card-footer'>
-            <a href='index.php'><button type='button' class='btn btn-light mx-auto'>Light</button></a>
+        <div class=0'card-footer .bg-warning'>
+            <a href='index.php'><button type='button' class='btn btn-light mx-auto'>chiudi</button></a>
         </div>
       </div>";
 
